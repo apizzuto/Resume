@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper,sans]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=0cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\definecolor{ensodata-lightgreen}{HTML}{4CA359}
+\definecolor{ensodata-darkgreen}{HTML}{32756A}
+\definecolor{mydarkblue}{HTML}{3873B3}
+%\colorlet{awesome}{awesome-skyblue}
+%\colorlet{awesome}{ensodata-lightgreen}
+\colorlet{awesome}{mydarkblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+% EnsoData Color
+
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{Alex}{Pizzuto}
+\position{Research Scientist for the Wisconsin IceCube Particle Astrophysics Center | PhD candidate at the University of Wisconsin-Madison}
+% \address{address}
+
+\mobile{(716) 472-7283}
+\email{alex.j.pizzuto@gmail.com}
+\homepage{apizzuto.github.io}
+\github{apizzuto}
+\linkedin{alex-pizzuto-3a97ab14a}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+\twitter{@ajpizzuto}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\usepackage{soul}
+
+\begin{document}
+
+
+% %% ModernCV themes
+% \moderncvstyle{banking}
+% \moderncvcolor{blue}
+% \renewcommand{\familydefault}{\sfdefault}
+% \nopagenumbers{}
+
+% %% Character encoding
+% \usepackage[utf8]{inputenc}
+
+% %% Adjust the page margins
+% \usepackage[scale=0.9]{geometry}
+% \usepackage{fontawesome}
+
+
+% %% Personal data
+% \firstname{Alex}
+% \familyname{Pizzuto}
+% %\title{Graduate Research Assistant at the University of Wisconsin - Madison} 
+% %\address{street and number}{postcode city} 
+% \mobile{+1~(716)~472~7283} 
+% %\phone{+2~(345)~678~901} 
+% %\fax{+3~(456)~789~012} 
+% \email{alex.j.pizzuto@gmail.com} 
+% %\homepage{www.apizzuto.github.io} 
+% \extrainfo{\faicon{github} \href{https://github.com/apizzuto}{apizzuto}} 
+% %\photo[64pt][0.4pt]{picture}
+% %\quote{Some quote (optional)}
+
+% %%------------------------------------------------------------------------------
+% %% Content
+% %%------------------------------------------------------------------------------
+% \begin{document}
+% \makecvtitle
+
+% \vspace{-1cm}
+% \section{Education}
+% \cventry{2017--present}{(Expected) PhD, Physics}{University of Wisconsin-Madison}{Madison, WI}{}{%Thesis: \textit{Neutrino astrophysics from Gigaelectronvolt to Exaelectronvolt}, 
+% %\newline{}
+% } 
+
+% \cventry{2017--2019}{Master's of Arts, Physics}{University of Wisconsin-Madison}{Madison, WI}{}{Minor: Computational methods in particle astrophysics}
+
+% \cventry{2013--2017}{Bachelor's of Science}{Loyola University Chicago}{Chicago, IL}{summa cum laude}{Majors: Physics, Mathematics, Theoretical Physics and Applied Mathematics}
+
+\makecvheader[C]
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Junhao Dong~~~·~~~Résumé}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\vspace{-0.5cm}
+\input{resume/skills}
+\vspace{-0.3cm}
+\input{resume/phd.tex}
+\vspace{-0.8cm}
+\input{resume/experience}
+\vspace{-0.5cm}
+\input{resume/programming}
+
+%\input{resume/computerscience}
+%\vspace{-0.7cm}
+%\input{resume/contributions}
+%\vspace{-0.7cm}
+%\vspace{-0.7cm}
+%\input{resume/research}
+%\vspace{-0.7cm}
+%\input{resume/additional}
+
+
+%% A publications list
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications} % a bibtex file containing the list of publications
+
+\end{document}
